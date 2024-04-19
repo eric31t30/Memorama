@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Memorama</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body class="fondo-pagina">
+	
+	<main>
+		
+		
+		<section class="section1">
+			
+
+				<div class="container">
+					<button class="imagen-inicio-carta" id="0" onclick="destapar(0)"></button>
+					<button class="imagen-inicio-carta" id="1" onclick="destapar(1)"></button>
+					<button class="imagen-inicio-carta" id="2" onclick="destapar(2)"></button>
+					<button class="imagen-inicio-carta" id="3" onclick="destapar(3)"></button>
+				
+					<button class="imagen-inicio-carta" id="4" onclick="destapar(4)"></button>
+					<button class="imagen-inicio-carta" id="5" onclick="destapar(5)"></button>
+					<button class="imagen-inicio-carta" id="6" onclick="destapar(6)"></button>
+					<button class="imagen-inicio-carta" id="7" onclick="destapar(7)"></button>
+				
+					<button class="imagen-inicio-carta" id="8" onclick="destapar(8)"></button>
+					<button class="imagen-inicio-carta" id="9" onclick="destapar(9)"></button>
+					<button class="imagen-inicio-carta" id="10" onclick="destapar(10)"></button>	
+					<button class="imagen-inicio-carta" id="11" onclick="destapar(11)"></button>
+				
+					<button class="imagen-inicio-carta" id="12" onclick="destapar(12)"></button>
+					<button class="imagen-inicio-carta" id="13" onclick="destapar(13)"></button>
+					<button class="imagen-inicio-carta" id="14" onclick="destapar(14)"></button>
+					<button class="imagen-inicio-carta" id="15" onclick="destapar(15)"></button>
+				</div>
+			
+		</section>
+		
+		
+		<section class="section2">
+			<h1 class="titulo"></h1>
+			<h2 id="aciertos" class="estadisticas amarilla">Aciertos: 0</h2>
+			<h2 id="t-restante" class="estadisticas rosada">Tiempo: <span class="segundos"></span> Segundos</h2>
+			<h2 id="movimientos" class="estadisticas verde">Movimientos: 0</h2>
+			<p class="texto-programador">Juego programado por <a href="https://github.com/eric31t30" class="author" target="_blank">eric31t30</a></p>
+		</section>
+
+
+		<section class="section3">
+			<div class="barra-de-opciones">
+				<div class="opciones opciones-cartas">
+					<div class="carta-opciones-1 mini-cartas"></div>
+					<div class="carta-opciones-2 mini-cartas"></div>
+					<div class="carta-opciones-3 mini-cartas"></div>
+				</div>
+			
+				<div class="opciones opciones-fondo">
+					<div class="opciones-fondo-contenido"></div>
+				</div>
+				
+				<div class="opciones opciones-tiempo">
+					<div class="opciones-tiempo-contenido-1 tiempo-contenido"></div>
+					<div class="opciones-tiempo-contenido-2 tiempo-contenido"></div>
+				</div>
+				
+				<div class="opciones opciones-sonido"></div>
+			</div>
+			<div class="boton-opciones">
+				<p class="texto-boton-opciones">¡Opciones!</p>
+			</div>
+		</section>
+		
+		<p class="tocar">¡Presiona una Carta para Empezar!</p>
+		
+		<div class="boton-repetir">
+			<p class="texto-repetir">¡Reiniciar!</p>
+		</div>
+
+		<p class="texto-cartas-reiniciadas">!La baraja ha sido reinciada¡</p>
+
+		<div class="uno"></div>
+		<div class="error"></div>
+		<div class="check"></div>
+
+
+		<div class="bloqueador-modal"></div>
+		<div class="modal-cartas">
+			<div class="cartas-modal carta-modal-poker contenido-modal">
+				<p class="texto-contenido-modal">POKER</p>
+			</div>
+			<div class="cartas-modal carta-modal-fruta contenido-modal">
+				<p class="texto-contenido-modal">FRUTAS</p>
+			</div>
+			<div class="cartas-modal carta-modal-numero contenido-modal">
+				<p class="texto-contenido-modal">NUMEROS</p>
+			</div>
+
+			<p class="texto-cartas-modal-repetir">Elegir una nueva coleccion de cartas reiniciara el mazo</p>
+		</div>
+
+		
+		<div class="modal-fondos ">
+			<div class="fondos-modal fondo-modal-poker contenido-modal">
+				<p class="texto-contenido-modal">POKER</p>
+			</div>
+			<div class="fondos-modal fondo-modal-picnic contenido-modal">
+				<p class="texto-contenido-modal">PICNIC</p>
+			</div>
+			<div class="fondos-modal fondo-modal-espacio contenido-modal">
+				<p class="texto-contenido-modal">ESPACIO</p>
+			</div>
+
+		</div>
+		
+		
+		<div class="modal-tiempo">
+			<div class="tiempos-modal tiempo-modal-30 contenido-modal">
+				<p class="texto-contenido-modal texto-tiempo">SEGUNDOS</p>
+			</div>
+			<div class="tiempos-modal tiempo-modal-40 contenido-modal">
+				<p class="texto-contenido-modal texto-tiempo">SEGUNDOS</p>
+			</div>
+			<div class="tiempos-modal tiempo-modal-50 contenido-modal">
+				<p class="texto-contenido-modal texto-tiempo">SEGUNDOS</p>
+			</div>
+
+			<p class="texto-tiempo-modal-repetir">Elegir un nuevo tiempo reiniciara el mazo</p>
+		</div>
+	</main>
+	
+	<script src="codigo.js"></script>
+	</body>
+</html>
